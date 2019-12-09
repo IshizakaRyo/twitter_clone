@@ -7,21 +7,19 @@
         <p :style="msgStyle">{{  message }}</p>
         <hr />
       </div>
-      <AddButton v-on:click="addOn"></AddButton>
-      <button v-o:click="addOn">TRY</button>
     </section>
   </div>
 </template>
 
 <script>
 import  Header  from '@/components/header.vue';
-import  AddButton  from '@/components/addButton.vue';
+
 
 export default {
   data: function() {
     return {
-      title: 'Hello',
-      message: 'this is Timeline',
+      title: 'Home',
+      message: 'This is your space.',
       msgStyle: {
         display: 'on'
       }
@@ -36,8 +34,7 @@ export default {
     }
   },
   components: {
-    Header,
-    AddButton
+    Header
   }
 };
 </script>
@@ -46,42 +43,8 @@ export default {
 .container {
     display: flex;
     position: relative;
+    padding: 5px 10px;
   }
-  .sideA {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    width: 200px;
-    height: 100vh;
-    flex-direction: column;
-    position: relative;
-  }
-  .linkButton {
-    width: 150px;
-    text-decoration: none;
-    text-align: center;
-    color: #000;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 20px;
-  }
-  .linkButton:hover {
-    color: #7CB376;
-  }
-#tweetButton {
-    display: none;
-}
-.tweetButton {
-    background-color: #7CB376;
-    color: #fff; 
-    width: 180px;
-    height: 45px;
-    text-align: center;
-    line-height: 45px;
-    border-radius: 20px;
-    font-weight: bold;
-}
 .headA {
   width: 100%;
 }
@@ -91,9 +54,6 @@ a {
 .link {
   background-color: #def;
   padding: 10px;
-}
-.container {
-  padding: 5px 10px;
 }
 h1 {
   font-size: 60pt;

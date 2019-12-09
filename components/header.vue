@@ -10,4 +10,48 @@
     </section>
 </template>
 
+<style>
+.container {
+    display: flex;
+    position: relative;
+  }
+.sideA {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.linkButton {
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16pt;
+}
+.linkButton:hover {
+    color: #7CB376;
+}
+#tweetButton {
+    display: none;
+}
+.tweetButton {
+    background-color: #7CB376;
+    color: #fff; 
+    width: 180px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+</style>
+
+
 
