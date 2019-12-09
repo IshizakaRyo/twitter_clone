@@ -16,9 +16,9 @@
         <button v-on:click="screenOn">+</button>
         <div class="addScreen" :style="style">
             <div class="container">
-                <div v-on:click="screenOff">XXX</div>
+                <div v-on:click="screenOff() && reset()">XXX</div>
                 <p>Email</p>
-                <input v-model="email"　type="hidden">
+                <input v-model="email" type="hidden">
                 <p>Name</p>
                 <input v-model="username">
                 <p>Gmail</p>
