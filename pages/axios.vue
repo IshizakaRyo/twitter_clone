@@ -8,7 +8,7 @@
                 <div class="dataBox"> 
                 <p>{{ key }}</p>
                 <p>{{ data.name }} </p>
-                <p>{{ data.email }}</p>
+                <p>{{ data.content }}</p>
                 </div>
             </li>
         </ul>
@@ -22,7 +22,7 @@
                 <p>Name</p>
                 <input v-model="username">
                 <p>Gmail</p>
-                <input v-model="gmail">
+                <textarea v-model="content"></textarea>
                 <button @click="addData">Click</button>
                 <p>こんにちは！</p>
             </div>
@@ -47,7 +47,7 @@ export default {
             },
             email: this.timestamp(),
             username: '',
-            gmail: '',
+            content: '',
             json_data: {}
         };
     },
@@ -66,12 +66,12 @@ export default {
             let add_url = urlIn + '/' + this.email + '.json';
             let data = {
                 'name': this.username,
-                'email': this.gmail
+                'content': this.content
             };
             axios.put(add_url, data).then((re)=>{
                 this.email = '';
                 this.username = '';
-                this.gmail = '';
+                this.content = '';
                 this.getData();
             });
         },
