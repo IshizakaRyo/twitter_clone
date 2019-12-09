@@ -6,9 +6,8 @@
         <ul v-for="(data, key) in json_data">
             <li class="listData">
                 <div class="dataBox"> 
-                <p>{{ data.name }} </p>
                 <p>{{ key }}</p>
-                <p>{{ data.time }}</p>
+                <p>{{ data.name }} </p>
                 <p>{{ data.email }}</p>
                 </div>
             </li>
@@ -49,7 +48,6 @@ export default {
             email: this.timestamp(),
             username: '',
             gmail: '',
-            time: '',
             json_data: {}
         };
     },
@@ -68,14 +66,12 @@ export default {
             let add_url = urlIn + '/' + this.email + '.json';
             let data = {
                 'name': this.username,
-                'email': this.gmail,
-                'time': this.timestamp()
+                'email': this.gmail
             };
             axios.put(add_url, data).then((re)=>{
                 this.email = '';
                 this.username = '';
                 this.gmail = '';
-                this.time = '';
                 this.getData();
             });
         },
