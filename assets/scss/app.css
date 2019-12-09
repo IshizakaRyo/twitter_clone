@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+  }
+  .sideA {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .linkButton {
+    width: 120px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #C8FFC2;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .linkButton:hover {
+    background-color: #7CB376;
+  }
