@@ -104,11 +104,18 @@ export default {
 }
 </script>
 <style scoped>
-
 .container {
     position: relative;
     display: flex;
     padding: 5px 10px;
+}
+/* headA */
+.main {
+  width: 100em;
+  position: relative;
+}
+.headA {
+  width: 100%;
 }
 .pageTitle {
   font-size: 60pt;
@@ -121,26 +128,7 @@ export default {
 hr {
   margin: 10px 0px;
 }
-.main {
-  width: 100em;
-  position: relative;
-}
-.conA {
-  position: relative;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.closeButtonWrap {
-    overflow: hidden;
-}
-.closeButton {
-    font-size: 20px;
-    float: left;
-    margin-right: 50px;
-}
-.headA {
-  width: 100%;
-}
+
 /* 投稿されたデータ */
 .listData {
     list-style: none;
@@ -158,7 +146,7 @@ hr {
 .dataMessage {
     font-size: 30px;
 }
-/* 投稿スクリーン */
+/* 投稿を表示する画面 */
 .addScreen {
     position: fixed;
     background:rgba(0, 0, 0, .4);
@@ -177,6 +165,14 @@ hr {
     margin-top: 18%;
     border: #7CB376 solid 5px;
     border-radius: 10px;
+}
+.closeButtonWrap {
+    overflow: hidden;
+}
+.closeButton {
+    font-size: 20px;
+    float: left;
+    margin-right: 50px;
 }
 
 /* 右下のプラスボタン */
@@ -218,5 +214,4 @@ hr {
     background-color:#3E6639;
     color: #7CB376;
 }
-
 </style>
