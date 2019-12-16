@@ -10,10 +10,11 @@
     </section>
 </template>
 
-<style>
+<style scoped>
 .container {
     display: flex;
     position: relative;
+    margin-right: 200px;
   }
 .sideA {
     display: flex;
@@ -23,7 +24,7 @@
     width: 200px;
     height: 100vh;
     flex-direction: column;
-    position: relative;
+    position: fixed;
 }
 .linkButton {
     width: 150px;
