@@ -3,9 +3,7 @@
         <div class="sideA"> 
             <router-link class="linkButton" to="/"><font-awesome-icon :icon="['fas', 'home']" />  Home</router-link>
             <router-link class="linkButton" to="/chatwork"><font-awesome-icon icon="comments"/>  ChatWork</router-link>
-            <router-link class="linkButton" to="/myspace"><font-awesome-icon icon="male"/>  MySpace</router-link>
-            <router-link class="linkButton" to="/option"><font-awesome-icon :icon="['fas', 'cog']" />  Option</router-link>
-            <button id="tweetButton"></button><label for="tweetButton" class="tweetButton">Tweet</label>
+            <button id="reloadButton" @click="relode()" ></button><label for="reloadButton" class="reloadButton">Reloade</label>
             </div>
     </section>
 </template>
@@ -39,10 +37,10 @@
 .linkButton:hover {
     color: #7CB376;
 }
-#tweetButton {
+#reloadButton {
     display: none;
 }
-.tweetButton {
+.reloadButton {
     background-color: #7CB376;
     color: #fff; 
     width: 180px;
@@ -53,6 +51,14 @@
     font-weight: bold;
 }
 </style>
-
+<script>
+export default {
+    methods: {
+        relode: function() {
+            this.$router.go({path: this.$router.currentRoute.path, force: true})
+        }
+    },
+}
+</script>
 
 

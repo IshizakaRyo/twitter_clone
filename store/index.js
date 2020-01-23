@@ -1,4 +1,5 @@
-import {vuexfireMutations} from 'vuexfire'
+import {vuexfireMutations} from 'vuexfire';
+
 
 export const mutations = {
     ...vuexfireMutations

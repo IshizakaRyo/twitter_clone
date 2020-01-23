@@ -30,10 +30,8 @@
 <script>
 const axios = require('axios');
 import moment from 'moment';
-
 let url = "https://clone-twitter-91d23.firebaseio.com/person";
 let urlAll = "https://clone-twitter-91d23.firebaseio.com/person.json";
-
 export default {
     data: function() {
         return {

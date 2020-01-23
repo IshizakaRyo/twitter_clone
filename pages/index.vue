@@ -7,6 +7,11 @@
         <p :style="msgStyle">{{  message }}</p>
         <hr />
       </div>
+
+      <div>
+        <h2>このページはSPAの練習として作りました。</h2>
+        <p>ヘッダーからうまくchatworkスペースに遷移できるかな？？</p>
+      </div>
     </section>
   </div>
 </template>
@@ -19,7 +24,7 @@ export default {
   data: function() {
     return {
       title: 'Home',
-      message: 'This is your space.',
+      message: 'This is test space.',
       msgStyle: {
         display: 'on'
       }
